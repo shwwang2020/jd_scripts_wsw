@@ -1,13 +1,13 @@
-name: 京东疯狂JOY
+name: 京东疯狂JOY挂机
 
 on:
     workflow_dispatch:
     schedule:
-        - cron: "0 20 * * *"
+        - cron: "0 0/6 * * *"
     watch:
         types: [started]
     repository_dispatch:
-        types: jd_crazy_joy
+        types: jd_crazy_joy_icon
 
 jobs:
     build:
@@ -23,7 +23,7 @@ jobs:
             - name: 安装依赖包
               run: |
                   npm install
-            - name: "运行【京东疯狂JOY】"
+            - name: "运行【京东疯狂JOY】挂机"
               run: |
                   node onlyOneExecute.js
               env:
