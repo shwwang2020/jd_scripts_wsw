@@ -5,8 +5,8 @@ name: 京东首页领京豆
 
 on:
     workflow_dispatch:
-    schedule:
-        - cron: "12 22 * * *"
+    #schedule:
+    #    - cron: "12 22 * * *"
     watch:
         types: [started]
     repository_dispatch:
