@@ -5,8 +5,8 @@ name: 签到领现金
 
 on:
     workflow_dispatch:
-    schedule:
-        - cron: "5 5,16 * * *"
+    #schedule:
+    #    - cron: "5 5,16 * * *"
     watch:
         types: [started]
     repository_dispatch:
